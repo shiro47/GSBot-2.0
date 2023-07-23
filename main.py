@@ -7,16 +7,16 @@ from discord.ext import commands
 from discord import app_commands
 from decouple import config
 import asyncio
-import uvicorn
+
 
 class MyBot(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix='>', intents=discord.Intents.all(), application_id=929089506316025907)
 
         self.initial_extansions = [
-            #"cogs.Apex.leaderboard",
-            #"cogs.Apex.embeds",
-            #"cogs.Twitch.streamers_live_list",
+            "cogs.Apex.leaderboard",
+            "cogs.Apex.embeds",
+            "cogs.Twitch.streamers_live_list",
             "cogs.adminPanel.webpage_access",
             "cogs.exception_handler",
         ]
@@ -57,5 +57,3 @@ def get_bot():
     return bot
 
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, loop="asyncio")

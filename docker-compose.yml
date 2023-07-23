@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  gsbot2:
+    image: gsbot2
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
