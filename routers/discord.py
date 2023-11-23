@@ -3,11 +3,12 @@ from fastapi import Depends, APIRouter
 from fastapi_discord import DiscordOAuthClient, Unauthorized, User
 from fastapi_discord.models import GuildPreview
 from database.whitelist_db import WhitelistDB
+from decouple import config
 
 router = APIRouter()
 
 discord = DiscordOAuthClient(
-    "929089506316025907", "ewpzJnrHNc-ofQZisS0GEGplQoAyWk6c", "http://localhost:3000/login", ("identify", "guilds", "email")
+    config('CLIENT_ID'), config('CLIENT_SECRET'), "http://localhost:3000/login", ("identify", "guilds", "email")
 )  # scopes
 
 @router.on_event("startup")
