@@ -5,9 +5,12 @@ This project is a Python-based Discord bot that is specifically designed to cate
 
 Additionally, the bot can register Twitch streamers and monitor their streaming status. It then sends this information to a designated text channel, ensuring that the server's members stay informed and up-to-date on their favorite streamers' activities.
 
+[Frontend](https://github.com/shiro47/GSBot-frontend)
+
 ## Tech Stack
 
-- Python 3.11 
+- Python 3.11
+- Fast API
 - Discord.py
 - REST APIs (Twitch and Apex)
 - MongoDB
@@ -27,6 +30,10 @@ To run this project, you will need to add the following environment variables to
 - `TWITCH_CLIENT_SECRET`: You can obtain this secret by visiting https://dev.twitch.tv/docs/api/.
 
 - `MONGODB_PASSWORD`: This is the password for your MongoDB Atlas database.
+  
+- `CLIENT_ID`: You can obtain this secret by visiting [https://dev.twitch.tv/docs/api/.](https://discord.com/developers/docs/topics/oauth2).
+
+- `CLIENT_SECRET`: You can obtain this secret by visiting [https://dev.twitch.tv/docs/api/.](https://discord.com/developers/docs/topics/oauth2).
 ## Features
 
 This Python-based Discord bot offers a range of features designed to enhance the Apex Legends gaming experience for server members, including:
