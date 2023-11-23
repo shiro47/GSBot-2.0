@@ -31,9 +31,9 @@ To run this project, you will need to add the following environment variables to
 
 - `MONGODB_PASSWORD`: This is the password for your MongoDB Atlas database.
   
-- `CLIENT_ID`: You can obtain this secret by visiting [https://dev.twitch.tv/docs/api/.](https://discord.com/developers/docs/topics/oauth2).
+- `CLIENT_ID`: You can obtain this secret by visiting [Discord API](https://discord.com/developers/docs/topics/oauth2).
 
-- `CLIENT_SECRET`: You can obtain this secret by visiting [https://dev.twitch.tv/docs/api/.](https://discord.com/developers/docs/topics/oauth2).
+- `CLIENT_SECRET`: You can obtain this secret by visiting [Discord API](https://discord.com/developers/docs/topics/oauth2).
 ## Features
 
 This Python-based Discord bot offers a range of features designed to enhance the Apex Legends gaming experience for server members, including:
