@@ -66,7 +66,7 @@ async def getPlayers(server_id: str):
     for player in players:
             user_data = await discord.get_user_info_by_id(player["DiscordID"])
             player.update({"avatar": user_data["avatar"]})
-            player.update({"display_name": user_data["display_name"]})
+            player.update({"display_name": user_data["global_name"]})
     return players
 
 @router.delete(
